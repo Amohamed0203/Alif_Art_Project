@@ -56,9 +56,13 @@ nav a:hover {
     transition: .35s;
 }
 
-nav .home-link {
-    margin-right: auto;
+nav .links-container .home-link {
+    margin-right: auto; /* Aligns to the left */
+    height: 100%; /* Spans the full height of the navbar */
+    display: flex; /* Enables alignment */
+    align-items: center; /* Centers text vertically */
 }
+
 
 nav svg {
     fill: var(--text-color);
