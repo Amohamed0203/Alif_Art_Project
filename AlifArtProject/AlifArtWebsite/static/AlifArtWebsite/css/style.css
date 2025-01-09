@@ -108,6 +108,14 @@ nav .links-container .logo img {
         transition: 0.75s ease-out;
     }
 
+    nav .links-container .home-link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
     nav a{
         box-sizing: border-box;
         height: auto;
@@ -257,6 +265,7 @@ nav .links-container .logo img {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: cursive;
 }
 
 .about .about-content .column-right .text span {

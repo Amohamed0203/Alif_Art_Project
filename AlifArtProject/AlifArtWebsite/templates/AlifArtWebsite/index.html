@@ -1,17 +1,18 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page Title</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'AlifArtWebsite/css/style.css' %}">
     </head>
     <body>
         <div id="navbar"></div>
 
         <section class="home-container" id="home">
             <div class="home-img">
-                <img src="images/logo.png" alt="Home Image">
+                <img src="{% static 'AlifArtWebsite/images/logo.png' %}" alt="Home Image">
             </div>
             <div class="home-text">
                 <div class="home-content">
@@ -29,6 +30,6 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-        <script src="navbar.js"></script>
+        <script src="{% static 'AlifArtWebsite/js/navbar.js' %}"></script>
     </body>
 </html>

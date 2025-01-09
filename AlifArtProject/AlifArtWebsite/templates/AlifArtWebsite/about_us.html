@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page Title</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'AlifArtWebsite/css/style.css' %}">
     </head>
     <body>
         <div id="navbar"></div>
@@ -14,12 +15,12 @@
                 <h2 class="title">About Us</h2>
                 <div class="about-content">
                     <div class="column-left">
-                        <img src="images/img6.heic" alt="">
+                        <img src="{% static 'AlifArtWebsite/images/img3.JPG' %}" alt="">
                     </div>
                     <div class="column-right">
-                        <!--<div class="text">Alif Art. Home of Islamic <span>Caligraphy</span></div>-->
+                        <div class="text">Alif Art. Home of Islamic <span>Caligraphy</span></div>
                         <p>  
-                            Alif Arts is a hub for creativity, where traditional Islamic art meets modern design. 
+                            Alif Art is a hub for creativity, where traditional Islamic art meets modern design. 
                             Our collection celebrates the rich heritage of Islamic calligraphy and abstract expression, 
                             offering pieces that resonate with spirituality and sophistication. Every artwork is crafted with 
                             precision and passion, making Alif Arts a trusted destination for those seeking meaningful and exquisite decor.
