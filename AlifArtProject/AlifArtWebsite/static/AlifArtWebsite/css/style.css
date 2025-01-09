@@ -344,3 +344,65 @@ fieldset {
   background-color: var(--accent-color);
   transition: .35s;
 }
+
+/* Gallery */
+
+.gallery .title {
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 1%;
+    font-family: cursive;
+}
+
+.img-gallery {
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-gallery img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: contain;
+    background-color: lightgrey;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: var(--text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+
+

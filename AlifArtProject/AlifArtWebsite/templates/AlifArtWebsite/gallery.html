@@ -1,17 +1,47 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page Title</title>
-        <link rel="stylesheet" href="{% static 'AlifArtWebsite/css/style.css' %}">
-    </head>
-    <body>
-        {% include 'templates/AlifArtWebsite/navbar.html' %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Slideshow</title>
+    <link rel="stylesheet" href="{% static 'AlifArtWebsite/css/style.css' %}">
+</head>
+<body>
+    {% include 'templates/AlifArtWebsite/navbar.html' %}
 
-        
+    <div class="gallery">
+        <h2 class="title">Gallery</h2>
+
+            <div class="full-img" id="fullImgBox">
+                <img src="{% static 'AlifArtWebsite/images/img3.JPG' %}" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+        <div class="img-gallery">
+            {% for image in images %}
+                <img src="{% static image.image %}" alt="Gallery Image {{ image.image_id }}" onclick="openFullImg(this.src)">
+            {% endfor %}
+        </div>
+
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+            function openFullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closeFullImg(){
+                fullImgBox.style.display = "none";
+            }
+        </script>
+
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+    </div>
+
+</body>
 </html>
+
+                    

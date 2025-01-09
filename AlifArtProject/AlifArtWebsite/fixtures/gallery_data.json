@@ -1,0 +1,74 @@
+[
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 1,
+        "fields": {
+            "image_id": 1,
+            "image": "AlifArtWebsite/images/img1.JPG"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 2,
+        "fields": {
+            "image_id": 2,
+            "image": "AlifArtWebsite/images/img2.JPG"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 3,
+        "fields": {
+            "image_id": 3,
+            "image": "AlifArtWebsite/images/img3.JPG"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 4,
+        "fields": {
+            "image_id": 4,
+            "image": "AlifArtWebsite/images/img4.JPG"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 5,
+        "fields": {
+            "image_id": 5,
+            "image": "AlifArtWebsite/images/img5.JPG"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 6,
+        "fields": {
+            "image_id": 6,
+            "image": "AlifArtWebsite/images/img6.heic"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 7,
+        "fields": {
+            "image_id": 7,
+            "image": "AlifArtWebsite/images/img7.heic"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 8,
+        "fields": {
+            "image_id": 8,
+            "image": "AlifArtWebsite/images/img8.heic"
+        }
+    },
+    {
+        "model": "AlifArtWebsite.gallery",
+        "pk": 9,
+        "fields": {
+            "image_id": 9,
+            "image": "AlifArtWebsite/images/img9.PNG"
+        }
+    }
+]
