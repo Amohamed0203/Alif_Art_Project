@@ -376,6 +376,11 @@ fieldset {
     background-color: lightgrey;
 }
 
+.img-gallery img:hover {
+    box-shadow: 0 0 20px var(--accent-color);
+    transition: box-shadow .35s ease;
+}
+
 .full-img {
     width: 100%;
     height: 100vh;
@@ -392,6 +397,7 @@ fieldset {
 .full-img img {
     width: 90%;
     max-width: 500px;
+    max-height: 90vh;
     object-fit: contain;
 }
 
